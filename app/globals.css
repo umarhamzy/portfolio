@@ -66,12 +66,14 @@
   }
 }
 
+@layer base {
+  button {
+    @apply active:outline-none;
+  }
+}
+
 @layer utilities {
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
-  }
-
-  .black-gradient {
-    background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
