@@ -2,8 +2,8 @@
 "use client";
 
 import { cn } from "@/utils/cn";
-import { BackgroundGradientAnimation } from "./BgGradientAnimation";
-import { GlobeDemo } from "./GridGlobe";
+import { BackgroundGradientAnimation } from "./background-gradient-animation";
+import { GlobeDemo } from "./GlobeDemo";
 import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
@@ -117,24 +117,28 @@ export const BentoGridItem = ({
 
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              <div className="flex flex-col gap-3 lg:gap-4">
-                {["React", "Next.js", "TypeScript", "Tailwind"].map((item) => (
+              <div className="flex flex-col gap-3 lg:gap-4 mt-5">
+                {["React", "Next.js", "TypeScript"].map((item) => (
                   <span
-                    className="py-2 px-3 text-xs lg:text-base opacity-50 rounded-lg text-center bg-[#10132E]"
+                    className="py-2.5 px-3 text-xs opacity-50 rounded-lg text-center bg-[#10132E]"
                     key={item}
                   >
                     {item}
                   </span>
                 ))}
+                <span
+                  className="py-4 px-3
+                 rounded-lg text-center bg-[#10132E]"
+                />
               </div>
               <div className="flex flex-col gap-3 lg:gap-4">
                 <span
                   className="py-4 px-3
                  rounded-lg text-center bg-[#10132E]"
                 />
-                {["JavaScript", "MongoDB", "Wordpress"].map((item) => (
+                {["JavaScript", "MongoDB", "Tailwind"].map((item) => (
                   <span
-                    className="py-2 px-3 text-xs lg:text-base opacity-50 rounded-lg text-center bg-[#10132E]"
+                    className="py-2.5 px-3 text-xs opacity-50 rounded-lg text-center bg-[#10132E]"
                     key={item}
                   >
                     {item}

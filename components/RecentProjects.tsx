@@ -1,10 +1,10 @@
 import { projects } from "@/data";
 import React from "react";
-import { ThreeDCardDemo } from "./ui/3DCardDemo";
+import { ThreeDCardDemo } from "./3DCardDemo";
 
 const RecentProjects = () => {
   return (
-    <div id="projects" className="scroll-mt-10">
+    <div id="projects" className="py-20 scroll-mt-10">
       <h1 className="heading">
         A small selection of recent{" "}
         <span className="text-purple">projects</span>
