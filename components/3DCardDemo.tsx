@@ -40,21 +40,19 @@ export function ThreeDCardDemo({
           {desc}
         </CardItem>
         <CardItem translateZ="10" className="w-full mt-4 absolute h-full -z-10">
-          <div className="">
-            <img
-              src="/bg.png"
+          <div>
+            <Image
+              src={"/bg.png"}
               alt="background-image"
               className="rounded-xl object-contain w-full h-full"
             />
           </div>
         </CardItem>
         <CardItem translateZ="50" className="w-full mt-4">
-          <img
+          <Image
             src={img}
-            // height="1000"
-            // width="1000"
-            className="h-60 w-full object-contain rounded-xl"
             alt="project thumbnail"
+            className="h-60 w-full object-contain rounded-xl"
           />
         </CardItem>
         <div className="flex justify-between items-center mt-10">
@@ -68,8 +66,7 @@ export function ThreeDCardDemo({
                   transform: `translateX(-${3 * index * 2}px)`,
                 }}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={icon} alt="tag" className="p-2" />
+                <Image src={icon} alt="tag" className="p-2" />
               </div>
             ))}
           </CardItem>
