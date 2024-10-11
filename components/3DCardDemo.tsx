@@ -1,9 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import { cn } from "@/utils/cn";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
 interface Props {
@@ -49,13 +48,15 @@ export function ThreeDCardDemo({
           </div>
         </CardItem>
         <CardItem translateZ="50" className="w-full mt-4">
-          <img
-            src={img}
-            // height="1000"
-            // width="1000"
-            className="h-60 w-full object-contain rounded-xl"
-            alt="project thumbnail"
-          />
+          <a href={link} target="_blank">
+            <img
+              src={img}
+              // height="1000"
+              // width="1000"
+              className="h-60 w-full object-contain rounded-xl"
+              alt="project thumbnail"
+            />
+          </a>
         </CardItem>
         <div className="flex justify-between items-center mt-10">
           {/* TODO: Use animated Tooltips */}
@@ -63,7 +64,7 @@ export function ThreeDCardDemo({
             {iconLists.map((icon, index) => (
               <div
                 key={icon}
-                className="border border-white/20 rounded-full dark:bg-[#161932] lg:w-10 lg:h-10 w-8 h-8 flex justify-center icons-center"
+                className="border border-white/20 rounded-full dark:bg-[#161932] w-8 h-8 flex justify-center items-center"
                 style={{
                   transform: `translateX(-${3 * index * 2}px)`,
                 }}
@@ -72,15 +73,6 @@ export function ThreeDCardDemo({
                 <img src={icon} alt="tag" className="p-2" />
               </div>
             ))}
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as={Link}
-            href={link}
-            target="_blank"
-            className="py-2 rounded-lg text-xs font-normal dark:text-blue-100 dark:bg-[#161932] w-24 text-center hover:text-sm transition-all duration-200 tracking-wider uppercase"
-          >
-            Visit →
           </CardItem>
         </div>
       </CardBody>

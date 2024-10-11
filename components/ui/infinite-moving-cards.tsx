@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { cn } from "@/utils/cn";
@@ -87,7 +88,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-800 px-8 py-6 w-[52ch]"
+            className="max-w-full relative rounded-2xl border flex-shrink-0 border-slate-800 px-8 py-6 w-[52ch]"
             style={{
               background: "rgb(4,7,29)",
               backgroundColor:

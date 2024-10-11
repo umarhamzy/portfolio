@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
-import { Separator } from "./ui/separator";
 
 const Footer = () => {
   return (

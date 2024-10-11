@@ -1,15 +1,17 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-import { FlipWords } from "./ui/FlipWords";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="h-[97vh] place-content-center antialiased px-5">
+    <div className="h-[97dvh] place-content-center antialiased relative px-5">
       <div>
-        <Spotlight className="top-0 left-0 h-screen" fill="lavender" />
+        <Spotlight
+          className="top-10 left-0 md:top-0 lg:top-0 lg:left-72 xl:left-40"
+          fill="lavender"
+        />
       </div>
 
       <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.1] flex items-center justify-center absolute top-0 left-0">
