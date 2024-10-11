@@ -39,7 +39,7 @@ export function ThreeDCardDemo({
           {desc}
         </CardItem>
         <CardItem translateZ="10" className="w-full mt-4 absolute h-full -z-10">
-          <div className="">
+          <div>
             <img
               src="/bg.png"
               alt="background-image"
@@ -69,7 +69,6 @@ export function ThreeDCardDemo({
                   transform: `translateX(-${3 * index * 2}px)`,
                 }}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={icon} alt="tag" className="p-2" />
               </div>
             ))}
